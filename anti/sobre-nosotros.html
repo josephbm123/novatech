@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - NovaTechSupply</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:0.5rem;">
+                <i class="fa-solid fa-microchip"></i> NovaTechSupply
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="sobre-nosotros.html" class="active">Sobre Nosotros</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+            <button><i class="fa-solid fa-search"></i></button>
+        </div>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count" class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="about-section" style="padding: 4rem 0;">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 style="font-size: 3rem; margin-bottom: 2rem;">Quiénes Somos</h2>
+                <p style="font-size: 1.3rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem;">
+                    En <strong style="color: var(--primary-color);">NovaTechSupply</strong>, nos apasiona conectar a las personas con la tecnología del mañana. Fundada con la visión de ofrecer los mejores equipos tecnológicos a precios competitivos, nos hemos convertido en la opción preferida para entusiastas y profesionales.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem; text-align: left;">
+                    <div class="category-card" style="padding: 2rem;">
+                        <i class="fa-solid fa-rocket" style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        <h3>Nuestra Misión</h3>
+                        <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 1rem; font-weight: normal;">Democratizar el acceso a la tecnología premium, garantizando calidad, soporte y envíos ultra rápidos en todo el país.</p>
+                    </div>
+                    <div class="category-card" style="padding: 2rem;">
+                        <i class="fa-solid fa-shield-halved" style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                        <h3>Nuestra Garantía</h3>
+                        <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 1rem; font-weight: normal;">Todos nuestros productos son 100% originales, cuentan con garantía directa del fabricante y nuestro soporte dedicado 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact-info">
+            <h3>Información de Contacto</h3>
+            
+            <div class="contact-item">
+                <span class="contact-label">WHATSAPP</span>
+                <a href="https://wa.me/584242333194" class="contact-value highlight">+58 424-2333194</a>
+            </div>
+            
+            <div class="contact-item">
+                <span class="contact-label">CORREO ELECTRÓNICO</span>
+                <a href="mailto:contacto@fullprinttech.com" class="contact-value">contacto@fullprinttech.com</a>
+            </div>
+            
+            <div class="contact-item">
+                <span class="contact-label">UBICACIÓN</span>
+                <span class="contact-value">Caracas, Venezuela</span>
+            </div>
+
+            <div class="footer-links-simple">
+                <a href="terminos.html">Términos y Condiciones</a>
+                <a href="privacidad.html">Política de Privacidad</a>
+                <a href="soporte.html">Centro de Soporte</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 NovaTechSupply. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
