@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Soporte - NovaTechSupply</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:0.5rem;">
+                <i class="fa-solid fa-microchip"></i> NovaTechSupply
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+            <button><i class="fa-solid fa-search"></i></button>
+        </div>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count" class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section style="padding: 4rem 0; max-width: 800px; margin: 0 auto; text-align: center;">
+            <i class="fa-solid fa-headset" style="font-size: 4rem; color: #06b6d4; margin-bottom: 1.5rem;"></i>
+            <h1 style="font-size: 2.5rem; margin-bottom: 2rem;">Centro de Soporte Técnico</h1>
+            <p style="color: var(--text-secondary); font-size: 1.2rem; margin-bottom: 3rem;">
+                Estamos aquí para ayudarte con cualquier duda o problema técnico que tengas con tus productos.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: left;">
+                <div class="category-card" style="padding: 2rem; border-radius: 16px; background: var(--surface-color); border: 1px solid var(--surface-border);">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 2rem; color: #25D366; margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 0.5rem;">Soporte por WhatsApp</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Atención inmediata de lunes a viernes, 9:00 AM a 6:00 PM.</p>
+                    <a href="https://wa.me/1234567890" target="_blank" style="color: #06b6d4; text-decoration: none; font-weight: bold;">Escribir a un agente</a>
+                </div>
+                
+                <div class="category-card" style="padding: 2rem; border-radius: 16px; background: var(--surface-color); border: 1px solid var(--surface-border);">
+                    <i class="fa-solid fa-envelope" style="font-size: 2rem; color: #a855f7; margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 0.5rem;">Soporte por Correo</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Para consultas generales, devoluciones o problemas de garantía.</p>
+                    <a href="mailto:soporte@novatechsupply.com" style="color: #06b6d4; text-decoration: none; font-weight: bold;">soporte@novatechsupply.com</a>
+                </div>
+            </div>
+            
+            <div style="margin-top: 4rem; text-align: left; background: var(--surface-color); padding: 2rem; border-radius: 16px; border: 1px solid var(--surface-border);">
+                <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Preguntas Frecuentes (FAQ)</h3>
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="margin-bottom: 0.5rem;">¿Cómo proceso una garantía?</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Contacta a nuestro soporte vía WhatsApp con tu número de cotización o factura para iniciar el proceso.</p>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="margin-bottom: 0.5rem;">¿Hacen envíos internacionales?</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Por los momentos solo realizamos despachos y envíos nacionales asegurados a través de nuestros aliados logísticos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact-info">
+            <h3>Información de Contacto</h3>
+            
+            <div class="contact-item">
+                <span class="contact-label">WHATSAPP</span>
+                <a href="https://wa.me/584242333194" class="contact-value highlight">+58 424-2333194</a>
+            </div>
+            
+            <div class="contact-item">
+                <span class="contact-label">CORREO ELECTRÓNICO</span>
+                <a href="mailto:contacto@fullprinttech.com" class="contact-value">contacto@fullprinttech.com</a>
+            </div>
+            
+            <div class="contact-item">
+                <span class="contact-label">UBICACIÓN</span>
+                <span class="contact-value">Caracas, Venezuela</span>
+            </div>
+
+            <div class="footer-links-simple">
+                <a href="terminos.html">Términos y Condiciones</a>
+                <a href="privacidad.html">Política de Privacidad</a>
+                <a href="soporte.html">Centro de Soporte</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 NovaTechSupply. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
