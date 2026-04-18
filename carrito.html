@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"
+                style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:0.5rem;">
+                <i class="fa-solid fa-microchip"></i> NovaTechSupply
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+            <button><i class="fa-solid fa-search"></i></button>
+        </div>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count" class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 style="margin-bottom: 0.5rem; font-size: 2.5rem;">Inventory Analysis</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 3rem;">Revisa y optimiza tu carrito antes de proceder al
+            pago.</p>
+
+        <div class="cart-layout">
+            <div id="cart-items-container" class="cart-items-container">
+                <!-- Cart items will be injected here -->
+            </div>
+
+            <div class="order-summary-container">
+                <div class="order-summary">
+                    <h2 style="font-size: 1.5rem; margin-bottom: 2rem;">Order Summary</h2>
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="summary-subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Envío (Express)</span>
+                        <span id="summary-shipping">$25.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Impuestos (5%)</span>
+                        <span id="summary-tax">$0.00</span>
+                    </div>
+
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span id="summary-total" style="color: #06b6d4; font-size: 2rem;">$0.00</span>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+                        <input type="text" id="client-name" placeholder="Nombre del cliente para cotización"
+                            style="padding: 1rem; border-radius: 8px; border: 1px solid var(--surface-border); background: rgba(0,0,0,0.3); color: white; outline: none; font-size: 1rem; text-align: center;">
+                        <button class="whatsapp-btn" onclick="checkoutWhatsApp()">
+                            WhatsApp Directo
+                        </button>
+                        <button class="pdf-btn" onclick="downloadPDF()">
+                            Descargar PDF
+                        </button>
+                    </div>
+
+                    <div class="security-badges">
+                        <div><i class="fa-solid fa-shield-check"></i> Secure AES-256 Encryption active</div>
+                        <div><i class="fa-solid fa-truck-fast"></i> Envío global disponible</div>
+                    </div>
+                </div>
+
+                <div class="prime-banner">
+                    <div class="prime-icon"><i class="fa-solid fa-medal"></i></div>
+                    <div>
+                        <div style="font-weight: bold; margin-bottom: 0.3rem;">Únete a NovaTech Prime</div>
+                        <div style="font-size: 0.9rem; color: var(--text-secondary);">Desbloquea envíos prioritarios y
+                            ofertas limitadas.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-contact-info">
+            <h3>Información de Contacto</h3>
+            
+            <div class="contact-item">
+                <span class="contact-label">WHATSAPP</span>
+                <a href="https://wa.me/584242333194" class="contact-value highlight">+58 424-2333194</a>
+            </div>
+            
+            <div class="contact-item">
+                <span class="contact-label">CORREO ELECTRÓNICO</span>
+                <a href="mailto:contacto@fullprinttech.com" class="contact-value">contacto@fullprinttech.com</a>
+            </div>
+            
+            <div class="contact-item">
+                <span class="contact-label">UBICACIÓN</span>
+                <span class="contact-value">Caracas, Venezuela</span>
+            </div>
+
+            <div class="footer-links-simple">
+                <a href="terminos.html">Términos y Condiciones</a>
+                <a href="privacidad.html">Política de Privacidad</a>
+                <a href="soporte.html">Centro de Soporte</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 NovaTechSupply. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="print-section" class="print-only">
+        <!-- Generado dinámicamente -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
